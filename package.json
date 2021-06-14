@@ -14,8 +14,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test --detectOpenHandles",
+    "eject": "react-scripts eject",
+    "sonar-scanner": "/home/xuanhoang/nxh/work/sonar-scanner-4.6.2.2472-linux/bin/sonar-scanner -Dsonar.projectKey=test-react -Dsonar.sources=. -Dsonar.host.url=http://localhost:9000 -Dsonar.login=482014e9c2f83973e3febec9ad6385c4de0407fe"
   },
   "eslintConfig": {
     "extends": [
