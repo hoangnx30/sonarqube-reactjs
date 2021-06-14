@@ -1,6 +1,7 @@
 import Greeting from "./Greeting";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import { shallow } from "enzyme";
 
 describe("Greeting components", () => {
   test("renders Hello Worlds as text", () => {
@@ -46,5 +47,13 @@ describe("Greeting components", () => {
       exact: false,
     });
     expect(outputElement).toBeNull();
+  });
+});
+
+describe("Greeting Components Enzyme", () => {
+  it('should render correctly in "debug" mode', () => {
+    const component = shallow(<Greeting debug />);
+
+    expect(component).toMatchSnapshot();
   });
 });

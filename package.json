@@ -6,6 +6,10 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "enzyme-to-json": "^3.6.2",
+    "jest-junit": "^12.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -14,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --detectOpenHandles",
+    "test": "react-scripts test --detectOpenHandles --coverage",
     "eject": "react-scripts eject",
     "sonar-scanner": "/home/xuanhoang/nxh/work/sonar-scanner-4.6.2.2472-linux/bin/sonar-scanner -Dsonar.projectKey=test-react -Dsonar.sources=. -Dsonar.host.url=http://localhost:9000 -Dsonar.login=482014e9c2f83973e3febec9ad6385c4de0407fe"
   },

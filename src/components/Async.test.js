@@ -1,4 +1,5 @@
 import { render, screen } from "@testing-library/react";
+import { shallow } from "enzyme";
 import Async from "./Async";
 
 describe("Async Components", () => {
@@ -15,3 +16,11 @@ describe("Async Components", () => {
     expect(listItemElements).not.toHaveLength(0);
   });
 });
+
+describe("Async Components Enzyme", () => {
+  it('should render correctly in "debug" mode', () => {
+    const component = shallow(<Async />);
+  
+    expect(component).toMatchSnapshot();
+  });
+})
