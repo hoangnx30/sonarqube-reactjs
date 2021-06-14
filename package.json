@@ -18,15 +18,20 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --detectOpenHandles --coverage",
-    "eject": "react-scripts eject",
-    "sonar-scanner": "/home/xuanhoang/nxh/work/sonar-scanner-4.6.2.2472-linux/bin/sonar-scanner -Dsonar.projectKey=test-react -Dsonar.sources=. -Dsonar.host.url=http://localhost:9000 -Dsonar.login=482014e9c2f83973e3febec9ad6385c4de0407fe"
+    "test": "react-scripts test --coverage --testResultsProcessor ./node_modules/jest-sonar-reporter/index.js",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
+  },
+  "jestSonar": {
+    "sonar56x": true,
+    "reportPath": "coverage",
+    "reportFile": "sonar-report.xml",
+    "indent": 4
   },
   "browserslist": {
     "production": [

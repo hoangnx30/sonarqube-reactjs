@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { shallow } from "enzyme";
-import Async from "./Async";
+import Async from "../components/Async";
 
 describe("Async Components", () => {
   test("renders posts if request succeeds", async () => {

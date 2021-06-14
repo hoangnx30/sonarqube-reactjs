@@ -1,4 +1,4 @@
-import Greeting from "./Greeting";
+import Greeting from "../components/Greeting";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { shallow } from "enzyme";
