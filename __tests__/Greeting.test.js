@@ -1,4 +1,4 @@
-import Greeting from "../components/Greeting";
+import Greeting from "../src/components/Greeting";
 import { act, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { shallow } from "enzyme";
@@ -64,20 +64,20 @@ describe("Greeting components", () => {
   });
 });
 
-// describe("Greeting Components Enzyme", () => {
-//   it('should render correctly in "debug" mode', () => {
-//     const component = shallow(<Greeting debug />);
+describe("Greeting Components Enzyme", () => {
+  it('should render correctly in "debug" mode', () => {
+    const component = shallow(<Greeting debug />);
 
-//     expect(component).toMatchSnapshot();
-//   });
-// });
+    expect(component).toMatchSnapshot();
+  });
+});
 
-// describe("Test following react", () => {
-//   it("test following react", () => {
-//     act(() => {
-//       render(<Greeting />, container);
-//     });
+describe("Test following react", () => {
+  it("test following react", () => {
+    act(() => {
+      render(<Greeting />, container);
+    });
     
-//     expect(container.textContent).toBe("");
-//   });
-// });
+    expect(container.textContent).toBe("");
+  });
+});

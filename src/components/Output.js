@@ -1,5 +1,6 @@
 const Output = (props) => {
-  return <p>{props.children}</p>;
+  const { content } = props;
+  return <p>{content}</p>;
 };
 
 export default Output;
