@@ -28,8 +28,7 @@
     ]
   },
   "jestSonar": {
-    "sonar56x": true,
-    "reportPath": "coverage",
+    "reportPath": "reports",
     "reportFile": "sonar-report.xml",
     "indent": 4
   },
