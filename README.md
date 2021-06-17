@@ -1,7 +1,7 @@
 ##  Setup Guideline
   ### Setup Sonarqube via docker
    1. Run command docker -d --name sonarqube -p 9000:9000 sonarqube
-   2. Visit to http://localhost:9000 to create your project then add to *sonar-project.properties* 
+   2. Visit to http://localhost:9000 to create your project then add to `sonar-project.properties`
    3. Create file in root your project named sonar-project.properties with content below (example). All configuration can be found in [Link](https://docs.sonarqube.org/latest/analysis/analysis-parameters/)
    ```.properties
     sonar.login=482014e9c2f83973e3febec9ad6385c4de0407fe
